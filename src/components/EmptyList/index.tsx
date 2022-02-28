@@ -7,8 +7,8 @@ export const EmptyList = () => {
 
   return (
     <Wrapper>
-      <Title label={t("componentes.emptyList.title")} />
-      <Caption label={t("componentes.emptyList.caption")} />
+      <Title label={t("components.emptyList.title")} />
+      <Caption label={t("components.emptyList.caption")} />
     </Wrapper>
   )
 }

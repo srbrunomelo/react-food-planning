@@ -30,7 +30,7 @@ export const Main = ({ children }: MainType) => {
         </Header>
         <DisplayName>
           <span className="occupation">Pizzaria</span>
-          <span className="company">DON REMOLO</span>
+          <span className="company">DON REACT</span>
         </DisplayName>
         <DrawerMenu />
       </Drawer>  

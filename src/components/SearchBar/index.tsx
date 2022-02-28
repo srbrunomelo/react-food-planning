@@ -7,8 +7,10 @@ import { Wrapper, Form, Input, Activators, DrawerMenuActive } from './styled'
 import useDebounce from '../../hooks/useDebounce'
 import { Col, Row } from 'react-bootstrap'
 import { useMenuContext } from '../../context/menu/useMenuContext'
+import { useTranslation } from 'react-i18next'
 
 export const SearchBar = () => {
+  const { t } = useTranslation()
   const { buttonColor } = useTheme()
   const { isOpen, toogle } = useMenuContext() 
   const [searchField, setSearchField] = useState('')
@@ -34,7 +36,7 @@ export const SearchBar = () => {
             <Icon name="Search" color={buttonColor.link} />
             <Input 
               type="text" 
-              placeholder='Buscar algo ...' 
+              placeholder={t('components.searchBar.inputLabel')} 
               value={searchField} 
               onChange={handleChange} 
             />

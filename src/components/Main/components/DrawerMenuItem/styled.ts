@@ -6,9 +6,9 @@ import { DrawerMenuItemType } from './type'
 export const Wrapper = styled(Link)`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 5px; 
+  align-items: center; 
+  margin-bottom: 5px;
+  margin-left: -30px;
 `
 
 export const Label = styled.label<Pick<DrawerMenuItemType, 'active'>>`

@@ -2,48 +2,47 @@ export default {
   translations: {
     components: {
       searchBar: {
-        inputLabel: "Buscar algo ..."
+        inputLabel: "Search item ..."
       },
       loaderComponent: {
-        label: "...Carregando"
+        label: "...loading"
       },
       drawerMenu: {
         items: {
-          home: "Inicio",
-          wishlist: "Favoritos"
+          home: "Home",
+          wishlist: "Wishlist"
         }
       },
       orderPreview: {
         components: {
           endOfLine: {
-            label: "É só isso."
+            label: "That's it, that's all."
           },
           headerOrderPreview: {
-            title: "Meu Pedido",
+            title: "My Order",
             summary: {
               single: "Item",
-              multiple: "Itens"
+              multiple: "Items"
             }
           },
           footerOrderPreview: {
-            title: "Valor do pedido",
+            title: "Value of the order",
             actions: {
-              button: "Fechar Pedido"
+              button: "Request Order"
             }
           }
         }
       },
       emptyList: {
-        title: "Ops!!!",
-        caption: "Nenhum registro encontrado."
-      }
+        title: "Wow!!!",
+        caption: "No records found."}
     },
     pages: {
       home: {
         sections: {
           categories: {
-            title: "Categorias",
-            description: "Selecione uma categoria para encontrar o melhor de nós."
+            title: "Categories",
+            description: "Select a category to find the best of us."
           }
         }
       }

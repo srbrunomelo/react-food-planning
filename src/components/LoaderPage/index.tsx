@@ -1,9 +1,9 @@
 import { Icon } from '..'
  
 import { useTheme } from "styled-components"
-import { Wrapper } from "./styled"
+import { Wrapper } from "./styled" 
 
-export const LoaderPage = () => {
+export const LoaderPage = () => { 
   const { colors } = useTheme() 
   
   return (

@@ -1,15 +1,18 @@
+import { useTranslation } from "react-i18next"
 import { Main, PageContent, SearchBar, ProductList, SessionTitle } from "../../components"
 import { CategoryList } from './components/CategoryList'
 
 const Home = () => {
+  const { t } = useTranslation()
+
   return (
     <Main>
       <PageContent>
         <SearchBar />
         <SessionTitle
           className="mt-4"
-          title="Categorias"
-          caption="Selecione uma categoria para encontrar o melhor de nós."
+          title={t("pages.home.sections.categories.title")}
+          caption={t("pages.home.sections.categories.description")}
         />
         <CategoryList />
         <ProductList />

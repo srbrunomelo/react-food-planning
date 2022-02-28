@@ -26,9 +26,7 @@ const OrderProvider: React.FC = ({ children }) => {
   function removeItem(id: string) {
     dispatch({
       type: OrderAction.REMOVE_PRODUCT,
-      payload: {
-        id
-      }
+      payload: { id }
     })
   }
 

@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 import { Wrapper } from "./styled"
 
 export const LoaderComponent = () => {
+  const { t } = useTranslation()
   return (
     <Wrapper>
-      ... carregando
+      {t('components.loaderComponent.label')}
     </Wrapper>
   )
 } 

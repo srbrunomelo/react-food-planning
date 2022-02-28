@@ -1,3 +1,4 @@
+import { useTheme } from 'styled-components'
 import { Icon, ProductTitle, ProductValue } from '../../../../../'
 import { useOrder } from '../../../../../../context/order/useOrder'
 import { Wrapper, DeleteItem, Photo, Description, NumberSelect } from './styled'
@@ -5,6 +6,7 @@ import { Wrapper, DeleteItem, Photo, Description, NumberSelect } from './styled'
 import { OrderItemType } from './type'
 
 export const OrderItem = ({ order }: OrderItemType) => {  
+  const { textColor } = useTheme()
   const { removeItem, updateAmount } = useOrder()
   
   function handleUpdateAmount (value: number) {   
@@ -20,7 +22,7 @@ export const OrderItem = ({ order }: OrderItemType) => {
         <NumberSelect min="1" type="number" value={order.amount} onChange={(e) => handleUpdateAmount(Number(e.target.value))} />
       </Description>
       <DeleteItem onClick={() => removeItem(order.id)}>
-        <Icon name="Close" color="#333" />
+        <Icon name="Close" color={textColor.title} />
       </DeleteItem> 
     </Wrapper>
   )
