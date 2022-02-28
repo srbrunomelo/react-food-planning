@@ -7,7 +7,8 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from './styles/global'
-import theme from './styles/themes/light' 
+// import theme from './styles/themes/light' 
+import theme from './styles/themes/dark' 
 
 import MainRoutes from './routes'
 

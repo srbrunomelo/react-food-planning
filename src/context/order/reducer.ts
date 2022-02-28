@@ -44,11 +44,17 @@ export function reducer(state: InitialStateType, action: ActionType) {
       const elementsIndex = newArray.findIndex(row => row.id === payload.id) 
       newArray[elementsIndex] = { ...newArray[elementsIndex], amount: payload.amount}
 
-      return {
-        ...state,
-        order: newArray
-        // totalValue: 
-      }
+      // fazer uma copia do item
+      // modificar esse item copiado com as novas quantidades.
+      // incluir essa copia modificada no array geral
+
+
+      // return {
+      //   ...state,
+      //   order: newArray
+      //   // totalValue: 
+      // }
+      return state
 
     default:
       return state
