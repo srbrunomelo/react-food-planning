@@ -33,12 +33,7 @@ export const DisplayName = styled.div`
   }
 `
  
-export const Logo = styled.img``;
-
-
-
-
-
+export const Logo = styled.img``; 
 
 export const Wrapper = styled(Container)`
   padding-left: 0;

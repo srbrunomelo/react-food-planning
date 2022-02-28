@@ -5,8 +5,7 @@ export const Wrapper = styled.div<DrawerType>`
   transition: 500ms;
   display: block;
   left:  ${({ isOpen }) => isOpen ? '0' : '-100%' }; 
-  position: absolute;
-  background: ${({ theme }) => theme.colors.body}; 
+  position: absolute; 
   z-index: 2;
   padding: 25px;
   height: 100vh;

@@ -35,7 +35,8 @@ export const NumberSelect = styled.input`
   text-align: center;
   padding: 10px;
   border-radius: 9px;
-  background: #EBEBEB;
+  background: ${({ theme }) => theme.colors.boxColor};
+  color: #333;
 `
 
 export const Wrapper = styled.div`

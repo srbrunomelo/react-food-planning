@@ -7,18 +7,22 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from './styles/global'
-// import theme from './styles/themes/light' 
-import theme from './styles/themes/dark' 
+import lightTheme from './styles/themes/light' 
+import darkTheme from './styles/themes/dark' 
 
 import MainRoutes from './routes'
+import { useContextTheme } from './context/theme/useContextTheme';
 
 const queryClient = new QueryClient(); 
-  
 
 function App() {   
+  const { theme, ThemeAction } = useContextTheme()
+
+  console.log(theme === ThemeAction.LIGHT)
+
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme === ThemeAction.LIGHT ? lightTheme : darkTheme}>
         <GlobalStyle />
         <MainRoutes />
       </ThemeProvider>
