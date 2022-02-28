@@ -5,7 +5,7 @@ import { ProductValueType } from "./type"
 export const ProductValue = ({ value }: ProductValueType) => {
   return (
     <Wrapper>
-      R$ {formatReal(Number(value))}
+      {formatReal(Number(value))}
     </Wrapper>
   )
 }

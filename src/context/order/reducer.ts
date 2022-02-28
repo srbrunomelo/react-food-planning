@@ -1,11 +1,15 @@
 import { InitialStateType, ActionType } from './type'
-import { OrderAction } from './type';
+import { OrderAction, OrderType } from './type';
 
 export function reducer(state: InitialStateType, action: ActionType) {
   const { type, payload } = action;
   const { order, totalValue } = state
 
   const currentTotalValue = (value: string, amount: number) => (Number(value) * amount) + totalValue
+  
+  const getTotalValue = (array: OrderType[]) => {
+    return array.reduce((previousValue: number, currentValue: OrderType) => (currentValue.amount * Number(currentValue.product.value)) + previousValue, 0)
+  }
 
   switch(type) {
     case OrderAction.ADD_PRODUCT:     
@@ -39,22 +43,16 @@ export function reducer(state: InitialStateType, action: ActionType) {
         totalValue: totalValue - totalValueItem
       }
  
-    case OrderAction.CHANGE_AMOUNT:
-      let newArray = [...order]
-      const elementsIndex = newArray.findIndex(row => row.id === payload.id) 
+    case OrderAction.CHANGE_AMOUNT: 
+      let newArray = [...order] 
+      const elementsIndex = newArray.findIndex(row => row.id === payload.id)
       newArray[elementsIndex] = { ...newArray[elementsIndex], amount: payload.amount}
 
-      // fazer uma copia do item
-      // modificar esse item copiado com as novas quantidades.
-      // incluir essa copia modificada no array geral
-
-
-      // return {
-      //   ...state,
-      //   order: newArray
-      //   // totalValue: 
-      // }
-      return state
+      return {
+        ...state,
+        order: newArray,
+        totalValue: getTotalValue(newArray)
+      } 
 
     default:
       return state
