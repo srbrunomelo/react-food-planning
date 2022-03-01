@@ -1,5 +1,6 @@
 export type MenuListItemType = {
-  active: boolean 
+  active?: boolean 
   icon: string
-  path: string
+  path?: string
+  onClick?: () => void
 }
