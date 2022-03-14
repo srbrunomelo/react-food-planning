@@ -1,4 +1,4 @@
-export default {
+const ptBrTranslations = {
   translations: {
     components: {
       searchBar: {
@@ -58,3 +58,5 @@ export default {
     }
   }
 }
+
+export default ptBrTranslations

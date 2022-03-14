@@ -1,4 +1,4 @@
-export default {
+const enUsTranslations = {
   translations: {
     components: {
       searchBar: {
@@ -57,3 +57,5 @@ export default {
     }
   }
 }
+
+export default enUsTranslations
