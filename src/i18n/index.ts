@@ -7,12 +7,16 @@ import translations from './locales'
 const i18nConfig = {
   resources: translations,
   fallbackLng: 'pt-BR',
-  defaultNS: 'translations'
+  defaultNS: 'translations',
+  debug: true,
+  interpolation: {
+    escapeValue: false
+  }
 }
-
+ 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
+  .use(LanguageDetector)
   .init(i18nConfig)
 
 export default i18n

@@ -37,12 +37,13 @@ export const Main = ({ children }: MainType) => {
       <FloatingTray className='d-block d-md-none'>
         <Icon name="Car" color='#FFF' />
       </FloatingTray>
+
       <Row>
         <SideMenu className="col-md-1 d-none d-md-block" /> 
         <Content>
           {children}
-        </Content>
-        <OrderPreview className="col-md-3 col-lg-3 d-none d-md-block" />
+        </Content> 
+        <OrderPreview className="col-md-3 col-lg-3 d-none d-md-block" /> 
       </Row>
     </Wrapper>
   )

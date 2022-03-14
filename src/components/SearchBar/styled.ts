@@ -13,6 +13,7 @@ export const Input = styled.input`
   width: 100%;
   background: none;
   border: none;
+  color: ${({ theme }) => theme.buttonColor.link};
 `
 
 export const Form = styled.div`

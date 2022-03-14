@@ -4,6 +4,7 @@ export type InitialStateType = {
   addItem: (produto:ProductType) => void
   removeItem: (id: string) => void
   updateAmount: (id: string, amount: number) => void
+  itemsInCart: number
 } 
 
 export type OrderType = {

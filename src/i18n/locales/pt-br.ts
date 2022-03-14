@@ -46,6 +46,14 @@ export default {
             description: "Selecione uma categoria para encontrar o melhor de nós."
           }
         }
+      },
+      wishlist: {
+        sections: {
+          descriptionPage: {
+            title: "Favoritos",
+            description: "Seus itens selecionados como favoritos."
+          }
+        }
       }
     }
   }
