@@ -18,10 +18,12 @@ export const SearchBar = () => {
   const debouncedValue = useDebounce<string>(searchField, 1200)
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => setSearchField(event.target.value)
+ 
+  useEffect(() => {
+    updateFilters({ ...state, searchTerm: searchField, categoryId: '' })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [debouncedValue])
 
-  //@ts-ignore
-  useEffect(() => updateFilters({ ...state, searchTerm: searchField, categoryId: '' }), [debouncedValue])
-  
   return ( 
     <Wrapper> 
       <Row className='d-flex align-items-center'>

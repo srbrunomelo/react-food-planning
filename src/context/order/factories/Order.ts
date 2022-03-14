@@ -16,8 +16,7 @@ function OrderFactory({ state, action }:OrderFactoryType) {
     return array.reduce((previousValue: number, currentValue: OrderType) => currentValue.amount + previousValue, 0)
   }
    
-  const addProduct = () => { 
-    console.log('addProduct')
+  const addProduct = () => {  
     let row = order.find(row => row.product.id === payload.product.id)
     
     if (row) { 
@@ -55,8 +54,7 @@ function OrderFactory({ state, action }:OrderFactoryType) {
     // }
   }
 
-  const changeAmount = () => {
-    console.log('changeAmount')
+  const changeAmount = () => { 
     // let newArray = [...order] 
     // const elementsIndex = newArray.findIndex(row => row.id === payload.id)
     // newArray[elementsIndex] = { ...newArray[elementsIndex], amount: payload.amount}
