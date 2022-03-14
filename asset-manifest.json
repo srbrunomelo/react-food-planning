@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/react-food-planning/static/css/main.568d7522.css",
-    "main.js": "/react-food-planning/static/js/main.66c137f9.js",
+    "main.js": "/react-food-planning/static/js/main.1458bf37.js",
     "static/js/470.0b4ca642.chunk.js": "/react-food-planning/static/js/470.0b4ca642.chunk.js",
     "static/js/877.36f446be.chunk.js": "/react-food-planning/static/js/877.36f446be.chunk.js",
     "static/media/logo.png": "/react-food-planning/static/media/logo.ad0bd9f51ef83b1dd6df.png",
     "index.html": "/react-food-planning/index.html",
     "main.568d7522.css.map": "/react-food-planning/static/css/main.568d7522.css.map",
-    "main.66c137f9.js.map": "/react-food-planning/static/js/main.66c137f9.js.map",
+    "main.1458bf37.js.map": "/react-food-planning/static/js/main.1458bf37.js.map",
     "470.0b4ca642.chunk.js.map": "/react-food-planning/static/js/470.0b4ca642.chunk.js.map",
     "877.36f446be.chunk.js.map": "/react-food-planning/static/js/877.36f446be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.568d7522.css",
-    "static/js/main.66c137f9.js"
+    "static/js/main.1458bf37.js"
   ]
 }
