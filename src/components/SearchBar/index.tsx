@@ -19,6 +19,7 @@ export const SearchBar = () => {
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => setSearchField(event.target.value)
 
+  //@ts-ignore
   useEffect(() => updateFilters({ ...state, searchTerm: searchField, categoryId: '' }), [debouncedValue])
   
   return ( 
