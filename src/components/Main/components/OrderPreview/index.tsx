@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next'
  
 export const OrderPreview = ({ className }:{ className: string }) => {
   const { t } = useTranslation()
-  const { order, totalValue  } = useOrder() 
+  const { order, totalValue } = useOrder() 
 
   const renderOrderList = order.map(item => (
     <OrderItem key={item.id} order={item} />
@@ -17,7 +17,7 @@ export const OrderPreview = ({ className }:{ className: string }) => {
   return (
     <Wrapper className={className}>
       <OrderList>
-        <HeaderOrderPreview amount={order.length} /> 
+        <HeaderOrderPreview /> 
         {renderOrderList} 
         <EndOfLine> 
           {t('components.orderPreview.components.endOfLine.label')}

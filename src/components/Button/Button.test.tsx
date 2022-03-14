@@ -21,7 +21,7 @@ describe('<Button />', () => {
   it('Deve renderizar um botão desabilitado', () => {
     render(
       <ThemeProvider theme={theme}>
-        <Button label="Desabilitado" isFull disabled={true} /> 
+        <Button label="Desabilitado" isFull disabled /> 
       </ThemeProvider> 
     )
  

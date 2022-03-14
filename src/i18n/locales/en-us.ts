@@ -45,6 +45,14 @@ export default {
             description: "Select a category to find the best of us."
           }
         }
+      },
+      wishlist: {
+        sections: {
+          descriptionPage: {
+            title: "Favorites",
+            description: "Your selected items as favorites."
+          }
+        }
       }
     }
   }

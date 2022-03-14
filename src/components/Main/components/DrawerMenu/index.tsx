@@ -11,7 +11,7 @@ export const DrawerMenu = () => {
   return (
     <Wrapper>
       <DrawerMenuItem label={t("components.drawerMenu.items.home")} path="/" active={isCurrentPage('/')} />
-      <DrawerMenuItem label={t("components.drawerMenu.items.wishlist")} path="/wishlist" active={isCurrentPage('/wishlist')} /> 
+      {/* <DrawerMenuItem label={t("components.drawerMenu.items.wishlist")} path="/wishlist" active={isCurrentPage('/wishlist')} />  */}
     </Wrapper>
   )
 }

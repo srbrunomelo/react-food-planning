@@ -17,9 +17,7 @@ const queryClient = new QueryClient();
 
 function App() {   
   const { theme, ThemeAction } = useContextTheme()
-
-  console.log(theme === ThemeAction.LIGHT)
-
+ 
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme === ThemeAction.LIGHT ? lightTheme : darkTheme}>

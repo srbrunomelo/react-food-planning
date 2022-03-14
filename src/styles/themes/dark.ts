@@ -8,14 +8,14 @@ const theme: DefaultTheme = {
   },
   
   textColor: {
-    typography: '#616161',
-    title: '#616161',
-    caption: '#616161'
+    typography: '#e1e1e6',
+    title: '#e1e1e6',
+    caption: '#e1e1e6'
   },
 
   buttonColor: {
     button: '#FF4E4E',
-    link: '#616161',
+    link: '#e1e1e6',
     color: "#000"
   }, 
 

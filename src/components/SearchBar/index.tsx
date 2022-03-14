@@ -15,7 +15,7 @@ export const SearchBar = () => {
   const { isOpen, toogle } = useMenuContext() 
   const [searchField, setSearchField] = useState('')
   const { state, updateFilters } = useFilters()
-  const debouncedValue = useDebounce<string>(searchField, 500)
+  const debouncedValue = useDebounce<string>(searchField, 1200)
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => setSearchField(event.target.value)
 
@@ -34,9 +34,12 @@ export const SearchBar = () => {
         <Col className="col-10 col-md-12"> 
           <Form> 
             <Icon name="Search" color={buttonColor.link} />
-            <Input 
+            <Input
+              role="input"
+              data-testid="search"
+              name="search"
               type="text" 
-              placeholder={t('components.searchBar.inputLabel')} 
+              placeholder={t('components.searchBar.inputLabel')}  
               value={searchField} 
               onChange={handleChange} 
             />

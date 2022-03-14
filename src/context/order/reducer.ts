@@ -1,16 +1,22 @@
-import { InitialStateType, ActionType } from './type'
-import { OrderAction, OrderType } from './type';
+import { InitialStateType, ActionType, OrderType, OrderAction } from './type' 
+// import OrderFactory from './factories/Order';
 
 export function reducer(state: InitialStateType, action: ActionType) {
-  const { type, payload } = action;
-  const { order, totalValue } = state
+  // const { actions } = OrderFactory({ state, action })
 
+  const { type, payload } = action;
+  const { order, totalValue, itemsInCart } = state
+ 
   const currentTotalValue = (value: string, amount: number) => (Number(value) * amount) + totalValue
   
   const getTotalValue = (array: OrderType[]) => {
     return array.reduce((previousValue: number, currentValue: OrderType) => (currentValue.amount * Number(currentValue.product.value)) + previousValue, 0)
   }
 
+  const getTotalitemsInCart = (array: OrderType[]) => {
+    return array.reduce((previousValue: number, currentValue: OrderType) => currentValue.amount + previousValue, 0)
+  } 
+  
   switch(type) {
     case OrderAction.ADD_PRODUCT:     
       let row = order.find(row => row.product.id === payload.product.id)
@@ -21,16 +27,19 @@ export function reducer(state: InitialStateType, action: ActionType) {
         arrayClone[elementsIndex] = { ...arrayClone[elementsIndex], amount: Number(arrayClone[elementsIndex].amount) + 1}
 
         return {
+
           ...state,
           order: arrayClone,
-          totalValue: currentTotalValue(arrayClone[elementsIndex].product.value, payload.amount)
+          totalValue: currentTotalValue(arrayClone[elementsIndex].product.value, payload.amount),
+          itemsInCart: getTotalitemsInCart(arrayClone)
         }
       }
 
       return {
         ...state,
         order: [...order, payload],
-        totalValue: currentTotalValue(payload.product.value, payload.amount)
+        totalValue: currentTotalValue(payload.product.value, payload.amount),
+        itemsInCart: itemsInCart + payload.amount
       }
   
     case OrderAction.REMOVE_PRODUCT:  
@@ -40,7 +49,8 @@ export function reducer(state: InitialStateType, action: ActionType) {
       return {
         ...state,
         order: order.filter(row => row.id !== payload.id),
-        totalValue: totalValue - totalValueItem
+        totalValue: totalValue - totalValueItem,
+        itemsInCart:  itemsInCart - currentItem.amount
       }
  
     case OrderAction.CHANGE_AMOUNT: 
@@ -51,10 +61,11 @@ export function reducer(state: InitialStateType, action: ActionType) {
       return {
         ...state,
         order: newArray,
-        totalValue: getTotalValue(newArray)
+        totalValue: getTotalValue(newArray),
+        itemsInCart: getTotalitemsInCart(newArray)
       } 
 
     default:
       return state
   }
-} 
+}

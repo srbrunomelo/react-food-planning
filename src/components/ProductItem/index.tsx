@@ -4,7 +4,6 @@ import { useOrder } from '../../context/order/useOrder'
 import { Wrapper, Body, Photo, Description, Action } from './styled'
 import { ProductItemType } from './type'
 
-
 const ProductItem = ({ product }: ProductItemType) => {
   const [active, setActive] = useState(false)
   const { addItem } = useOrder()
