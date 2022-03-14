@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.568d7522.css",
-    "main.js": "/static/js/main.05762c28.js",
-    "static/js/470.0b4ca642.chunk.js": "/static/js/470.0b4ca642.chunk.js",
-    "static/js/877.36f446be.chunk.js": "/static/js/877.36f446be.chunk.js",
-    "static/media/logo.png": "/static/media/logo.ad0bd9f51ef83b1dd6df.png",
-    "index.html": "/index.html",
-    "main.568d7522.css.map": "/static/css/main.568d7522.css.map",
-    "main.05762c28.js.map": "/static/js/main.05762c28.js.map",
-    "470.0b4ca642.chunk.js.map": "/static/js/470.0b4ca642.chunk.js.map",
-    "877.36f446be.chunk.js.map": "/static/js/877.36f446be.chunk.js.map"
+    "main.css": "/react-food-planning/static/css/main.568d7522.css",
+    "main.js": "/react-food-planning/static/js/main.1458bf37.js",
+    "static/js/470.0b4ca642.chunk.js": "/react-food-planning/static/js/470.0b4ca642.chunk.js",
+    "static/js/877.36f446be.chunk.js": "/react-food-planning/static/js/877.36f446be.chunk.js",
+    "static/media/logo.png": "/react-food-planning/static/media/logo.ad0bd9f51ef83b1dd6df.png",
+    "index.html": "/react-food-planning/index.html",
+    "main.568d7522.css.map": "/react-food-planning/static/css/main.568d7522.css.map",
+    "main.1458bf37.js.map": "/react-food-planning/static/js/main.1458bf37.js.map",
+    "470.0b4ca642.chunk.js.map": "/react-food-planning/static/js/470.0b4ca642.chunk.js.map",
+    "877.36f446be.chunk.js.map": "/react-food-planning/static/js/877.36f446be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.568d7522.css",
-    "static/js/main.05762c28.js"
+    "static/js/main.1458bf37.js"
   ]
 }
