@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_food_planning=self.webpackChunkreact_food_planning||[]).push([[877],{8877:function(e,s,i){i.r(s);var t=i(3168),n=i(6310),a=i(184);s.default=function(){var e=(0,t.$)().t;return(0,a.jsx)(n.or,{children:(0,a.jsx)(n.JH,{children:(0,a.jsx)(n.wF,{className:"mt-4",title:e("pages.wishlist.sections.descriptionPage.title"),caption:e("pages.wishlist.sections.descriptionPage.description")})})})}}}]);
+//# sourceMappingURL=877.36f446be.chunk.js.map
