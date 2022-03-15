@@ -8,6 +8,9 @@
 - Bootstrap(Grid)
 - i18n
 
+## Demonstração  
+https://srbrunomelo.github.io/react-food-planning
+
 ## Getting Started
  
 ```bash
@@ -19,3 +22,4 @@ npm install && npm start
 # Rodar Testes
 npm run test
 ```
+ 
