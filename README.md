@@ -8,7 +8,7 @@
 - Bootstrap(Grid)
 - i18n
 
-## Demonstração  
+## Demo  
 https://srbrunomelo.github.io/react-food-planning
 
 ## Github Actions
