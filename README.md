@@ -11,6 +11,9 @@
 ## Demonstração  
 https://srbrunomelo.github.io/react-food-planning
 
+## Tests
+![Tests](https://github.com/srbrunomelo/react-food-planning/actions/workflows/node.js.yml/badge.svg)
+
 ## Getting Started
  
 ```bash
