@@ -5,12 +5,12 @@ import { MenuListItemType } from './type'
 
 import { Icon } from '../../../'
 
-export const MenuListItem = ({ onClick, active, icon, path, ...rest }: MenuListItemType) => {
+export const MenuListItem = ({ onClick, active, id, icon, path, ...rest }: MenuListItemType) => {
   const { colors, buttonColor } = useTheme()
   const isActive = active ? colors.primary : buttonColor.link
 
   return (
-    <Wrapper active={active} {...rest} onClick={onClick}>
+    <Wrapper active={active} {...rest} onClick={onClick} id={id || ''}>
      {
        path &&
        <Link to={path}>

@@ -15,7 +15,7 @@ export const MenuList = ({ ...rest }) => {
     <Wrapper {...rest}>
       <MenuListItem path="/" icon={'Home'} active={isCurrentPage('/')} />
       {/* <MenuListItem path="/wishlist" icon={'Heart'} active={isCurrentPage('/wishlist')} />  */}
-      <MenuListItem onClick={() => change(handleLabelTheme)} icon={handleIcon} /> 
+      <MenuListItem onClick={() => change(handleLabelTheme)} icon={handleIcon} id="change-theme" /> 
     </Wrapper>
   )
 }
