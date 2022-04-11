@@ -26,6 +26,7 @@ export const Main = ({ children }: MainType) => {
             onClick={() => toogle(!isOpen)}
             name="Open"
             color={buttonColor.link}
+            id="close-side-menu"
           />
         </Header>
         <DisplayName>

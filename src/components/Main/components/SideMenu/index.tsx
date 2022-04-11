@@ -13,7 +13,12 @@ export const SideMenu = ({ ...rest }) => {
   return (
     <Wrapper {...rest}> 
       <HandleDrawer>
-        <Icon onClick={() => toogle(!isOpen)} name="Closed" color={buttonColor.link} /> 
+        <Icon 
+          id="open-side-menu" 
+          onClick={() => toogle(!isOpen)} 
+          name="Closed" 
+          color={buttonColor.link} 
+        /> 
       </HandleDrawer>
       <MenuList />
     </Wrapper>
